@@ -1,6 +1,6 @@
 # OmniAnalytics BI: Executive Dashboard & Decision Support System
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://omnianalytics-bi.streamlit.app/)
 ![Python 3.12](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)
 ![Plotly](https://img.shields.io/badge/Plotly-Interactive-3F4F75?logo=plotly&logoColor=white)
 ![CI/CD](https://github.com/FabricioRams/AG-01-Visualization-Reports-or-Dashboard/actions/workflows/ci.yml/badge.svg)
@@ -16,7 +16,7 @@ Desarrollado para la materia **Inteligencia de Negocios (INT-Negocios 2026-II)**
 
 | Entregable | Estado | Enlace |
 | :--- | :---: | :--- |
-| **Aplicación Web en la Nube (SaaS)** | Desplegado | [Abrir Dashboard en Streamlit Cloud](https://share.streamlit.io/) *(o la URL generada al vincular el repo)* |
+| **Aplicación Web en la Nube (SaaS)** | Desplegado | [Abrir Dashboard en Streamlit Cloud](https://omnianalytics-bi.streamlit.app/) |
 | **Repositorio Público de Código** | Activo | [GitHub: FabricioRams/AG-01-Visualization-Reports-or-Dashboard](https://github.com/FabricioRams/AG-01-Visualization-Reports-or-Dashboard) |
 | **Artículo Publicado (Medium / Dev.to)** | Listo para publicar | [Leer Borrador del Artículo en Markdown](./ARTICLE.md) *(Reemplazar con enlace público una vez posteado)* |
 | **Video Demostrativo (< 5 min)** | Guion preparado | [Ver Guion y Estructura del Video](./VIDEO_SCRIPT.md) *(Reemplazar con enlace de YouTube/TikTok/LinkedIn)* |

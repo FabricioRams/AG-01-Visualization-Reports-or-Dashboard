@@ -13,7 +13,7 @@
 1. **Herramienta de Grabacion:** OBS Studio, Clipchamp, Loom o barra de juegos de Windows (`Win + G`).
 2. **Pestañas abiertas en el navegador:**
    - Pestaña 1: Repositorio en GitHub ([FabricioRams/AG-01-Visualization-Reports-or-Dashboard](https://github.com/FabricioRams/AG-01-Visualization-Reports-or-Dashboard))
-   - Pestaña 2: Aplicación local o en la nube en vivo (`http://localhost:8501` o URL de Streamlit Cloud)
+   - Pestaña 2: Aplicación en vivo en la nube (https://omnianalytics-bi.streamlit.app/) o local (http://localhost:8501)
    - Pestaña 3: Editor de código (VS Code / Antigravity) mostrando `app.py`
 3. **Resolución de pantalla recomendada:** 1920x1080 (Full HD).
 
