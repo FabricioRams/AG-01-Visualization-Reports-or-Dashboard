@@ -11,7 +11,6 @@ import os
 # ---------------------------------------------------------
 st.set_page_config(
     page_title="Executive BI Dashboard | Inteligencia de Negocios",
-    page_icon="📈",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -149,13 +148,13 @@ except Exception as e:
 with st.sidebar:
     st.markdown("""
         <div style="text-align: center; padding: 12px 0 20px 0;">
-            <div style="font-size: 2.4rem;">📊</div>
+            <div style="display: inline-block; padding: 8px 16px; background: rgba(99, 102, 241, 0.2); border: 1px solid rgba(99, 102, 241, 0.4); border-radius: 12px; margin-bottom: 8px; font-weight: 800; font-size: 1.1rem; color: #818CF8; letter-spacing: 1px;">OMNI-BI</div>
             <h2 style="margin: 0; font-size: 1.4rem; font-weight: 800; color: #F8FAFC;">OmniAnalytics BI</h2>
             <p style="color: #94A3B8; font-size: 0.85rem; margin: 4px 0 0 0;">Control & Inteligencia de Negocios</p>
         </div>
     """, unsafe_allow_html=True)
     
-    st.markdown("### 🔍 Filtros de Segmentación")
+    st.markdown("### Filtros de Segmentación")
     
     # Date Range Filter
     min_date = df_raw['Fecha'].min().date()
@@ -213,7 +212,7 @@ df_filtered = df_raw[
 ]
 
 if df_filtered.empty:
-    st.warning("⚠️ No existen registros para los filtros seleccionados. Por favor ajusta los criterios en la barra lateral.")
+    st.warning("No existen registros para los filtros seleccionados. Por favor ajusta los criterios en la barra lateral.")
     st.stop()
 
 # ---------------------------------------------------------
@@ -288,7 +287,7 @@ with kpi_col5:
     <div class="metric-card">
         <div class="metric-title">Satisfacción (CSAT)</div>
         <div class="metric-value">{avg_csat:.2f} / 5.0</div>
-        <div class="metric-delta {'delta-pos' if avg_csat >= 4.0 else 'delta-neg'}">★ {'Excelente' if avg_csat >= 4.0 else 'Monitorear'}</div>
+        <div class="metric-delta {'delta-pos' if avg_csat >= 4.0 else 'delta-neg'}">{'Excelente' if avg_csat >= 4.0 else 'Monitorear'}</div>
     </div>
     """, unsafe_allow_html=True)
 
@@ -298,11 +297,11 @@ st.markdown("<div style='height: 20px;'></div>", unsafe_allow_html=True)
 # Tabs Structure
 # ---------------------------------------------------------
 tab1, tab2, tab3, tab4, tab5 = st.tabs([
-    "📊 Resumen Ejecutivo",
-    "📈 Productos y Canales",
-    "👥 Clientes y Segmentación",
-    "🔮 Simulador de Escenarios (What-If)",
-    "📋 Explorador de Datos"
+    "Resumen Ejecutivo",
+    "Productos y Canales",
+    "Clientes y Segmentación",
+    "Simulador de Escenarios (What-If)",
+    "Explorador de Datos"
 ])
 
 # Plotly Theme Colors
@@ -316,7 +315,7 @@ with tab1:
     c1, c2 = st.columns([1.6, 1])
     
     with c1:
-        st.subheader("📅 Evolución Mensual de Ventas y Margen de Utilidad")
+        st.subheader("Evolución Mensual de Ventas y Margen de Utilidad")
         # Aggregate monthly
         df_monthly = df_filtered.copy()
         df_monthly['Periodo'] = df_monthly['Fecha'].dt.to_period('M').dt.to_timestamp()
@@ -354,7 +353,7 @@ with tab1:
         st.plotly_chart(fig_trend, use_container_width=True)
         
     with c2:
-        st.subheader("🥧 Distribución por Categoría")
+        st.subheader("Distribución por Categoría")
         cat_agg = df_filtered.groupby('Categoria')['Ventas_Netas'].sum().reset_index()
         fig_donut = px.pie(
             cat_agg,
@@ -381,7 +380,7 @@ with tab1:
     
     c3, c4 = st.columns([1.2, 1.2])
     with c3:
-        st.subheader("🗺️ Rendimiento de Ingresos por Región")
+        st.subheader("Rendimiento de Ingresos por Región")
         reg_agg = df_filtered.groupby('Region').agg({
             'Ventas_Netas': 'sum',
             'Utilidad_Neta': 'sum'
@@ -408,7 +407,7 @@ with tab1:
         st.plotly_chart(fig_reg, use_container_width=True)
         
     with c4:
-        st.subheader("💳 Ventas según Método de Pago")
+        st.subheader("Ventas según Método de Pago")
         pay_agg = df_filtered.groupby('Metodo_Pago')['Ventas_Netas'].sum().reset_index()
         fig_pay = px.bar(
             pay_agg.sort_values(by='Ventas_Netas', ascending=False),
@@ -432,7 +431,7 @@ with tab1:
 # TAB 2: Productos y Canales
 # ---------------------------------------------------------
 with tab2:
-    st.subheader("🏆 Top 10 Productos con Mayor Generación de Ingresos")
+    st.subheader("Top 10 Productos con Mayor Generación de Ingresos")
     top_prod = df_filtered.groupby(['Producto', 'Categoria']).agg({
         'Ventas_Netas': 'sum',
         'Utilidad_Neta': 'sum',
@@ -460,7 +459,7 @@ with tab2:
     
     col_p1, col_p2 = st.columns(2)
     with col_p1:
-        st.subheader("🎯 Matriz de Dispersión: Margen % vs Ventas")
+        st.subheader("Matriz de Dispersión: Margen % vs Ventas")
         prod_scatter = df_filtered.groupby('Producto').agg({
             'Ventas_Netas': 'sum',
             'Margen_Utilidad_Pct': 'mean',
@@ -489,7 +488,7 @@ with tab2:
         st.plotly_chart(fig_scatter, use_container_width=True)
         
     with col_p2:
-        st.subheader("🌐 Estructura de Ventas: Canal y Segmento")
+        st.subheader("Estructura de Ventas: Canal y Segmento")
         fig_tree = px.treemap(
             df_filtered,
             path=['Canal_Venta', 'Segmento_Cliente'],
@@ -511,7 +510,7 @@ with tab3:
     c_seg1, c_seg2 = st.columns([1.2, 1])
     
     with c_seg1:
-        st.subheader("🏢 Distribución de Ventas por Segmento de Cliente")
+        st.subheader("Distribución de Ventas por Segmento de Cliente")
         seg_data = df_filtered.groupby('Segmento_Cliente').agg({
             'Ventas_Netas': 'sum',
             'Utilidad_Neta': 'sum',
@@ -538,7 +537,7 @@ with tab3:
         st.plotly_chart(fig_seg, use_container_width=True)
         
     with c_seg2:
-        st.subheader("⭐ Satisfacción del Cliente (CSAT) por Categoría")
+        st.subheader("Satisfacción del Cliente (CSAT) por Categoría")
         csat_cat = df_filtered.groupby('Categoria')['Calificacion_Satisfaccion'].mean().reset_index()
         fig_radar = px.line_polar(
             csat_cat,
@@ -560,7 +559,7 @@ with tab3:
 
     st.markdown("<hr style='border: 0.5px solid rgba(255,255,255,0.08);'>", unsafe_allow_html=True)
     
-    st.subheader("📊 Resumen Comparativo de Segmentos de Negocio")
+    st.subheader("Resumen Comparativo de Segmentos de Negocio")
     st.dataframe(
         seg_data.style.format({
             'Ventas_Netas': '${:,.2f}',
@@ -576,7 +575,7 @@ with tab3:
 with tab4:
     st.markdown("""
         <div style="background: rgba(30, 41, 59, 0.5); padding: 16px; border-radius: 12px; border-left: 4px solid #6366F1; margin-bottom: 20px;">
-            <h4 style="margin: 0 0 6px 0; color: #F8FAFC;">🔮 Modelo Predictivo y Simulación de Sensibilidad Financiera</h4>
+            <h4 style="margin: 0 0 6px 0; color: #F8FAFC;">Modelo Predictivo y Simulación de Sensibilidad Financiera</h4>
             <p style="margin: 0; color: #94A3B8; font-size: 0.92rem;">
                 Modifique las variables estratégicas para estimar el impacto financiero en los ingresos brutos, costos operativos y margen neto de la empresa.
             </p>
@@ -666,7 +665,7 @@ with tab4:
 # TAB 5: Explorador de Datos
 # ---------------------------------------------------------
 with tab5:
-    st.subheader("🔍 Explorador Detallado de Registros Comerciales")
+    st.subheader("Explorador Detallado de Registros Comerciales")
     
     exp_c1, exp_c2 = st.columns([3, 1])
     with exp_c1:
@@ -675,7 +674,7 @@ with tab5:
         st.markdown("<div style='height: 28px;'></div>", unsafe_allow_html=True)
         csv_export = df_filtered.to_csv(index=False).encode('utf-8')
         st.download_button(
-            label="📥 Descargar Dataset (CSV)",
+            label="Descargar Dataset (CSV)",
             data=csv_export,
             file_name=f"reporte_bi_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv",
             mime="text/csv",
@@ -697,7 +696,7 @@ with tab5:
         height=450
     )
     
-    st.markdown("### 📊 Métricas Estadísticas Descriptivas")
+    st.markdown("### Métricas Estadísticas Descriptivas")
     st.write(df_filtered[['Cantidad', 'Precio_Unitario', 'Ventas_Netas', 'Utilidad_Neta', 'Margen_Utilidad_Pct']].describe())
 
 # ---------------------------------------------------------

@@ -1,4 +1,4 @@
-# 📈 OmniAnalytics BI: Executive Dashboard & Decision Support System
+# OmniAnalytics BI: Executive Dashboard & Decision Support System
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/)
 ![Python 3.12](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)
@@ -12,27 +12,27 @@ Desarrollado para la materia **Inteligencia de Negocios (INT-Negocios 2026-II)**
 
 ---
 
-## 📌 Enlaces del Proyecto y Entregables
+## Enlaces del Proyecto y Entregables
 
 | Entregable | Estado | Enlace |
 | :--- | :---: | :--- |
-| **🌐 Aplicación Web en la Nube (SaaS)** | ✅ Desplegado | [Abrir Dashboard en Streamlit Cloud](https://share.streamlit.io/) *(o la URL generada al vincular el repo)* |
-| **🐙 Repositorio Público de Código** | ✅ Activo | [GitHub: FabricioRams/AG-01-Visualization-Reports-or-Dashboard](https://github.com/FabricioRams/AG-01-Visualization-Reports-or-Dashboard) |
-| **📝 Artículo Publicado (Medium / Dev.to)** | 📄 Listo para publicar | [Leer Borrador del Artículo en Markdown](./ARTICLE.md) *(Reemplazar con enlace público una vez posteado)* |
-| **🎥 Video Demostrativo (< 5 min)** | 🎬 Guion preparado | [Ver Guion y Estructura del Video](./VIDEO_SCRIPT.md) *(Reemplazar con enlace de YouTube/TikTok/LinkedIn)* |
-| **💬 Grupo de Telegram** | 📬 Pendiente envío | Enlace y video compartidos en el grupo del curso |
-| **📦 Archivo ZIP para entrega** | 📁 Preparado | Enlaces y fuentes listos para empaquetar |
+| **Aplicación Web en la Nube (SaaS)** | Desplegado | [Abrir Dashboard en Streamlit Cloud](https://share.streamlit.io/) *(o la URL generada al vincular el repo)* |
+| **Repositorio Público de Código** | Activo | [GitHub: FabricioRams/AG-01-Visualization-Reports-or-Dashboard](https://github.com/FabricioRams/AG-01-Visualization-Reports-or-Dashboard) |
+| **Artículo Publicado (Medium / Dev.to)** | Listo para publicar | [Leer Borrador del Artículo en Markdown](./ARTICLE.md) *(Reemplazar con enlace público una vez posteado)* |
+| **Video Demostrativo (< 5 min)** | Guion preparado | [Ver Guion y Estructura del Video](./VIDEO_SCRIPT.md) *(Reemplazar con enlace de YouTube/TikTok/LinkedIn)* |
+| **Grupo de Telegram** | Pendiente envío | Enlace y video compartidos en el grupo del curso |
+| **Archivo ZIP para entrega** | Preparado | Enlaces y fuentes listos para empaquetar |
 
 ---
 
-## 🚀 Características Principales del Dashboard
+## Caracteristicas Principales del Dashboard
 
-1. **Visión Ejecutiva Integral:**
+1. **Vision Ejecutiva Integral:**
    - Métricas clave en tiempo real: Ventas Netas, Utilidad Operativa, Volumen de Pedidos, Ticket Promedio (AOV) y Satisfacción (CSAT).
    - Evolución mensual combinada de ingresos vs. utilidad neta.
    - Distribución de ingresos por categoría y desempeño por región geográfica.
 
-2. **Análisis de Cartera de Productos y Canales:**
+2. **Analisis de Cartera de Productos y Canales:**
    - Top 10 productos con mayor volumen y margen de contribución.
    - Matriz de dispersión estratégica: Margen de utilidad (%) vs. Ventas totales con tamaño proporcional al volumen.
    - Treemap de estructura comercial por Canal de Venta y Segmento de Mercado.
@@ -45,13 +45,13 @@ Desarrollado para la materia **Inteligencia de Negocios (INT-Negocios 2026-II)**
    - Ajuste interactivo en tiempo real de precios (+/-), volumen de demanda (+/-) y variación en costos operativos.
    - Estimación instantánea del nuevo EBITDA y deltas porcentuales frente al escenario base.
 
-5. **Explorador y Auditoría de Datos:**
+5. **Explorador y Auditoria de Datos:**
    - Búsqueda textual sobre cualquier campo.
    - Exportación directa del conjunto de datos filtrado en formato **CSV**.
 
 ---
 
-## 🛠️ Estructura del Repositorio
+## Estructura del Repositorio
 
 ```text
 AG-01-Visualization-Reports-or-Dashboard/
@@ -65,20 +65,20 @@ AG-01-Visualization-Reports-or-Dashboard/
 ├── app.py                      # Aplicación principal de Streamlit con interfaz y visualizaciones
 ├── generate_data.py            # Generador determinista del dataset analítico
 ├── requirements.txt            # Dependencias del proyecto para producción
-├── ARTICLE.md                  # Artículo completo listo para publicar en Medium / Dev.to / Hashnode
+├── ARTICLE.md                  # Artículo completo en inglés sobre la plataforma
 ├── VIDEO_SCRIPT.md             # Guion detallado minuto a minuto para el video de 5 minutos
 └── README.md                   # Documentación oficial del proyecto y requerimientos
 ```
 
 ---
 
-## 💻 Instalación y Ejecución Local
+## Instalacion y Ejecucion Local
 
 ### Prerrequisitos
 - Python 3.10 o superior (recomendado Python 3.12).
 - Git instalado en el sistema.
 
-### Pasos de Instalación
+### Pasos de Instalacion
 1. Clonar el repositorio:
    ```bash
    git clone https://github.com/FabricioRams/AG-01-Visualization-Reports-or-Dashboard.git
@@ -108,11 +108,15 @@ AG-01-Visualization-Reports-or-Dashboard/
    ```bash
    streamlit run app.py
    ```
+   O alternativamente:
+   ```bash
+   python -m streamlit run app.py
+   ```
    La aplicación se abrirá automáticamente en tu navegador en `http://localhost:8501`.
 
 ---
 
-## ☁️ Despliegue Automatizado en la Nube (Streamlit Community Cloud)
+## Despliegue Automatizado en la Nube (Streamlit Community Cloud)
 
 Este proyecto está configurado para **despliegue continuo (Continuous Deployment - CD)** en la plataforma SaaS pública de Streamlit:
 
@@ -122,11 +126,11 @@ Este proyecto está configurado para **despliegue continuo (Continuous Deploymen
 4. Rama (*Branch*): `main`.
 5. Archivo principal (*Main file path*): `app.py`.
 6. Hacer clic en **"Deploy!"**.
-7. ¡Listo! Cada vez que se realice un `git push` a la rama `main`, Streamlit Cloud detectará los cambios y actualizará la aplicación automáticamente sin caída del servicio.
+7. Cada vez que se realice un `git push` a la rama `main`, Streamlit Cloud detectará los cambios y actualizará la aplicación automáticamente sin caída del servicio.
 
 ---
 
-## 📋 Lista de Cumplimiento de Requerimientos
+## Lista de Cumplimiento de Requerimientos
 
 - [x] **Public repository for app:** Repositorio en GitHub público con código estructurado.
 - [x] **Deploy through automation:** GitHub Actions CI (`.github/workflows/ci.yml`) y Continuous Deployment en Streamlit Cloud.
@@ -138,5 +142,5 @@ Este proyecto está configurado para **despliegue continuo (Continuous Deploymen
 
 ---
 
-## 👤 Autor
+## Autor
 - **Fabricio Rams** — *INT-Negocios 2026-II*

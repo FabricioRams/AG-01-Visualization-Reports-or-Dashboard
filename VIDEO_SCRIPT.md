@@ -1,16 +1,16 @@
-# Guion y Estructura de Grabación del Video (Máximo 5 Minutos)
+# Guion y Estructura de Grabacion del Video (Maximo 5 Minutos)
 
 **Proyecto:** OmniAnalytics BI - Dashboard de Inteligencia de Negocios en Streamlit  
 **Autor:** Fabricio Rams  
 **Materia:** Inteligencia de Negocios (INT-Negocios 2026-II)  
-**Duración Total Estimada:** 4 minutos y 30 segundos (Límite: 5 minutos)  
+**Duracion Total Estimada:** 4 minutos y 30 segundos (Límite: 5 minutos)  
 **Plataforma sugerida:** YouTube, LinkedIn, Facebook o TikTok (formato apaisado o vertical)  
 
 ---
 
-## 📋 Lista de Verificación Previa a la Grabación
+## Lista de Verificacion Previa a la Grabacion
 
-1. **Herramienta de Grabación:** OBS Studio, Clipchamp, Loom o barra de juegos de Windows (`Win + G`).
+1. **Herramienta de Grabacion:** OBS Studio, Clipchamp, Loom o barra de juegos de Windows (`Win + G`).
 2. **Pestañas abiertas en el navegador:**
    - Pestaña 1: Repositorio en GitHub ([FabricioRams/AG-01-Visualization-Reports-or-Dashboard](https://github.com/FabricioRams/AG-01-Visualization-Reports-or-Dashboard))
    - Pestaña 2: Aplicación local o en la nube en vivo (`http://localhost:8501` o URL de Streamlit Cloud)
@@ -19,9 +19,9 @@
 
 ---
 
-## ⏱️ Minuto a Minuto del Video
+## Minuto a Minuto del Video
 
-### 🎬 Bloque 1: Introducción y Contexto (0:00 – 0:45)
+### Bloque 1: Introduccion y Contexto (0:00 – 0:45)
 - **Qué mostrar en pantalla:** Vista principal del Dashboard en Streamlit o cámara + diapositiva de portada.
 - **Voz en off / Diálogo:**
   > *"¡Hola a todos! Bienvenidos a este video donde les presentaré el desarrollo y despliegue de **OmniAnalytics BI**, un panel ejecutivo de Inteligencia de Negocios en tiempo real para el curso INT-Negocios 2026.*  
@@ -29,7 +29,7 @@
 
 ---
 
-### 💻 Bloque 2: Arquitectura del Código y Tecnologías (0:45 – 1:30)
+### Bloque 2: Arquitectura del Codigo y Tecnologias (0:45 – 1:30)
 - **Qué mostrar en pantalla:** Editor de código con `app.py`, resaltando `generate_data.py` y `.streamlit/config.toml`.
 - **Voz en off / Diálogo:**
   > *"Para la construcción del proyecto utilizamos Python 3.12:*
@@ -40,7 +40,7 @@
 
 ---
 
-### 📊 Bloque 3: Demostración Interactiva del Dashboard (1:30 – 3:30)
+### Bloque 3: Demostracion Interactiva del Dashboard (1:30 – 3:30)
 - **Qué mostrar en pantalla:** El Dashboard en vivo, interactuando con los controles en tiempo real.
 - **Acciones y Diálogo:**
   1. **Barra Lateral y KPIs (1:30 – 2:00):**
@@ -61,7 +61,7 @@
 
 ---
 
-### ☁️ Bloque 4: Despliegue Automatizado y CI/CD en la Nube (3:30 – 4:15)
+### Bloque 4: Despliegue Automatizado y CI/CD en la Nube (3:30 – 4:15)
 - **Qué mostrar en pantalla:** Repositorio en GitHub, la pestaña *Actions* con el workflow verde, y la app corriendo en Streamlit Cloud.
 - **Voz en off / Diálogo:**
   > *"Cumpliendo con los requerimientos de entrega, la aplicación cuenta con un pipeline de CI/CD:*
@@ -70,7 +70,7 @@
 
 ---
 
-### 🚀 Bloque 5: Conclusiones y Cierre (4:15 – 4:45)
+### Bloque 5: Conclusiones y Cierre (4:15 – 4:45)
 - **Qué mostrar en pantalla:** Portada del artículo en Markdown o resumen final con enlaces.
 - **Voz en off / Diálogo:**
   > *"En conclusión, Streamlit nos permitió pasar de una idea a una solución de Business Intelligence funcional, estética y accesible en la nube en tiempo récord.*  
@@ -79,7 +79,7 @@
 
 ---
 
-## 🎯 Consejos para la Grabación
+## Consejos para la Grabacion
 - Mantén un tono enérgico y profesional.
 - Mueve el cursor de manera pausada y suave para que la audiencia pueda seguir los clics fácilmente.
 - Si te equivocas en una frase, simplemente haz una pausa de 2 segundos y repite la frase; luego puedes cortar el error fácilmente con cualquier editor básico.
