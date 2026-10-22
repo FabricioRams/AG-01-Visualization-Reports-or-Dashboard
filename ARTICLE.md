@@ -148,4 +148,5 @@ The repository adheres to contemporary software engineering and data governance 
 
 - **GitHub Repository:** [FabricioRams/AG-01-Visualization-Reports-or-Dashboard](https://github.com/FabricioRams/AG-01-Visualization-Reports-or-Dashboard)
 - **Live Cloud Dashboard:** [OmniAnalytics BI on Streamlit Cloud](https://omnianalytics-bi.streamlit.app/)
+- **Automated CI/CD Pipeline:** [GitHub Actions Workflows](https://github.com/FabricioRams/AG-01-Visualization-Reports-or-Dashboard/actions)
 - **Demonstration Video:** [Watch on YouTube / Media Platform](#)
